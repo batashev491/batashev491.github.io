@@ -81,3 +81,25 @@ main
 {
     font-size: 3vh;
 }
+
+@media only screen and (max-width : 1000px) {
+    
+    #grid2
+    {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        background-color: black;
+    }
+
+    #grid2 img
+    {
+        height: auto;
+        width: 20vw;
+        overflow: hidden;
+    }
+    #g2Contnt
+    {
+        color: lightgrey;
+        padding: 0.5vh;
+    }
+}
