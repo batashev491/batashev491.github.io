@@ -1,0 +1,342 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Play';
+    background-color: rgb(22, 22, 22) ;
+    color: darkgrey;
+}
+
+
+header
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    max-height: 100px;
+    padding: 25px;
+}
+
+#menubar
+{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-size: 7vw;
+    display: none;
+}
+
+#nav
+{
+    position: absolute;
+    bottom: 26px;
+    right: 26px;
+}
+
+#nav a
+{
+    text-decoration: none;
+    color: darkgrey;
+    font-size: 20px;
+} 
+
+
+#nav a:hover
+{
+    color: blueviolet;
+}
+
+.dropbtn 
+{
+    color: darkgrey;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(22, 22, 22);
+    font-family: 'Play';
+}
+
+.dropbtn:hover
+{   
+    background-color: rgba(211, 211, 211, 0.322);
+}
+
+.dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    margin-left: -150px;
+    background-color: rgb(26, 26, 26);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content 
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+main
+{
+    width: 80%;
+    margin: auto;
+}
+
+.mySlides 
+{
+    display: none;
+}
+
+img 
+{
+    vertical-align: middle;
+}
+
+
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  0% {opacity: 0} 
+  50% {opacity: 1}
+  100% {opacity: 0}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+#arr
+{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+}
+
+.item
+{
+    background-color: rgb(19, 19, 19);
+    display: grid;
+    margin: 1%;
+    border-radius: 2%;
+}
+
+.item:hover
+{
+    transition: 0.5s;
+    background-color: rgb(65, 65, 65)
+}
+
+.item p
+{
+    background-color: rgb(22, 22, 22) ;
+    margin: 0;
+    padding: 0;
+    padding-top: 2%;
+    font-size: 20px;
+}
+
+footer
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5% 10% 2% 10%;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: darkgrey;
+    font-size: 20px;
+}
+
+footer a:hover
+{
+    color: blueviolet;
+}
+
+#social-media-mob
+{
+    display: none;
+    font-size:50px;
+}
+
+#social-media-mob i:hover
+{
+    color: blueviolet;
+}
+
+#social-media nav
+{  
+    word-spacing: 15px;
+    text-align: right;
+}
+
+#social-media i
+{
+    font-size:50px;
+}
+
+#social-media i:hover
+{
+    color: blueviolet;
+}
+
+
+@media (max-width: 855px)
+{
+    header
+    {
+        padding: 15px;
+    }
+    main
+    {
+        width: 95%;
+    }
+    .item1
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .item2
+    {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+    .item3
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .item4
+    {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    
+}
+@media (max-width: 720px)
+{
+    #menubar
+    {
+        display: block;
+    }
+    #nav
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 580px) {
+    header
+    {
+        padding: 8px;
+    }
+    main
+    {
+        width: 98.5%;
+    }
+
+    #icon
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        max-width: fit-content;
+    }
+
+    .dot
+    {
+        display: none;
+    }
+
+    .item
+    {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    footer div
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+    }
+
+    #social-media
+    {
+        display: none;
+    }
+
+    #social-media-mob
+    {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+    }
+    #social-media-mob nav
+    {   
+        word-spacing: 15px;
+        text-align: center;
+    }
+  }

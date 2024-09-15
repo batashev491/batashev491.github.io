@@ -1,0 +1,83 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.head
+{
+    background-color: rgb(128, 128, 128);
+    color: rgb(250, 235, 215);
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    height: 13vh;
+}
+
+.head h1
+{
+    font-size: 4vh;
+}
+
+.links
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(43, 43, 43);
+    padding: 2vh;
+    font-size: 2.5vh;
+}
+
+.links a
+{
+    color: lightgray;
+    text-decoration: none;
+}
+
+.links a:hover
+{
+    color: aqua;
+}
+
+main
+{
+    display: grid;
+}
+
+.grid13
+{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.grid13 img
+{
+    height: 25vw;
+    width: 25vw;
+    overflow: hidden;
+}
+
+#grid2
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: black;
+}
+
+#grid2 img
+{
+    height: 25vw;
+    width: 25vw;
+    overflow: hidden;
+}
+
+#g2Contnt
+{
+    color: lightgrey;
+    padding: 4vh;
+}
+
+#g2Contnt p
+{
+    font-size: 3vh;
+}

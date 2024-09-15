@@ -1,0 +1,61 @@
+body
+{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-image: url(Media/Night.JPG);
+    background-repeat: repeat;
+    background-size: 100vw;
+    
+
+}
+
+a
+{
+    display: block;
+    text-align: center;
+    font-size: 1.9vh;
+    color: cadetblue;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: azure;
+}
+
+header
+{
+    color: cadetblue;
+    text-align: center;
+}
+
+main
+{
+    width: 90vw;
+    margin: auto;
+    color: cadetblue;
+}
+
+.flex
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.exscr
+{
+    max-width: 10vw;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
