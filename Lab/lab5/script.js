@@ -31,12 +31,14 @@ document.addEventListener("DOMContentLoaded", () => {
   switchVideoBtn.addEventListener("click", () => {
     if (isVideo1) {
       videoSource.src = "video/video2.mp4";
+      videoTrack.src = "video/captions2.vtt";
       isVideo1 = false;
     } 
 
     else 
     {
       videoSource.src = "video/video1.mp4"; 
+      videoTrack.src = "video/captions1.vtt";
       isVideo1 = true;
     }
     
