@@ -44,13 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
     videoPlayer.play(); // Optionally, play the new video immediately
   });
 
-  var video = document.querySelector('video-player');
-
-  video.addEventListener('load', function() {
-      var tracks = video.textTracks[0];
-      tracks.mode = 'showing';
-  });
-
   // Play/Pause toggle
   const playPauseBtn = document.getElementById("play-pause-btn");
   playPauseBtn.addEventListener("click", () => {
