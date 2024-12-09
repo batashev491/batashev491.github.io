@@ -32,18 +32,23 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isVideo1) {
       // Switch to video 2 and captions
       videoSource.src = "video/video2.mp4"; // Switch to video 2
-      videoTrack.src = "video/captions2.vtt"; // Switch to captions 2
       isVideo1 = false;
     } else {
       // Switch to video 1 and captions
       videoSource.src = "video/video1.mp4"; // Switch to video 1
-      videoTrack.src = "video/captions1.vtt"; // Switch to captions 1
       isVideo1 = true;
     }
     
     // Reload the video player and captions
     videoPlayer.load(); // Reload the video player with the new source
     videoPlayer.play(); // Optionally, play the new video immediately
+  });
+
+  var video = document.querySelector('video-player');
+
+  video.addEventListener('load', function() {
+      var tracks = video.textTracks[0];
+      tracks.mode = 'showing';
   });
 
   // Play/Pause toggle
