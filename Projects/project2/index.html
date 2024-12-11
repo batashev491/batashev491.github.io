@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fictional Gallery</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <h1>Gallery Showcase</h1>
+    <p>Explore our amazing collection of albums!</p>
+  </header>
+  <nav>
+    <button data-album="album1">Album 1</button>
+    <button data-album="album2">Album 2</button>
+    <button data-album="album3">Album 3</button>
+  </nav>
+
+  <main>
+    <div class="gallery" id="album1">
+      <div class="controls">
+        <button class="arrow left" aria-label="Previous slide">&#9664;</button>
+        <button class="arrow right" aria-label="Next slide">&#9654;</button>
+      </div>
+      <div class="slide active" data-index="1">
+          <img src="images/album1/img1.jpeg" alt="Description of image 1">
+          <p class="caption">Image 1 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+          <img src="images/album1/img2.jpeg" alt="Description of image 2">
+          <p class="caption">Image 2 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+          <img src="images/album1/img3.jpeg" alt="Description of image 3">
+          <p class="caption">Image 3 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+          <img src="images/album1/img4.jpeg" alt="Description of image 4">
+          <p class="caption">Image 4 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+          <img src="images/album1/img5.jpeg" alt="Description of image 5">
+          <p class="caption">Image 5 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+          <img src="images/album1/img6.jpeg" alt="Description of image 6">
+          <p class="caption">Image 6 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+          <img src="images/album1/img7.jpeg" alt="Description of image 7">
+          <p class="caption">Image 7 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+          <img src="images/album1/img8.jpeg" alt="Description of image 8">
+          <p class="caption">Image 8 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+          <img src="images/album1/img9.jpeg" alt="Description of image 9">
+          <p class="caption">Image 9 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+          <img src="images/album1/img10.jpeg" alt="Description of image 10">
+          <p class="caption">Image 10 caption</p>
+      </div>
+    </div>
+    <div class="gallery hidden" id="album2">
+      <div class="controls">
+        <button class="arrow left" aria-label="Previous slide">&#9664;</button>
+        <button class="arrow right" aria-label="Next slide">&#9654;</button>
+      </div>
+
+      <div class="slide active" data-index="1">
+        <img src="images/album2/img1.jpeg" alt="Description of image 1">
+        <p class="caption">Image 1 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/album2/img2.jpeg" alt="Description of image 2">
+        <p class="caption">Image 2 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/album2/img3.jpeg" alt="Description of image 3">
+        <p class="caption">Image 3 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/album2/img4.jpeg" alt="Description of image 4">
+        <p class="caption">Image 4 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/album2/img5.jpeg" alt="Description of image 5">
+        <p class="caption">Image 5 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/album2/img6.jpeg" alt="Description of image 6">
+        <p class="caption">Image 6 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/album2/img7.jpeg" alt="Description of image 7">
+        <p class="caption">Image 7 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/album2/img8.jpeg" alt="Description of image 8">
+        <p class="caption">Image 8 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/album2/img9.jpeg" alt="Description of image 9">
+        <p class="caption">Image 9 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/album2/img10.jpeg" alt="Description of image 10">
+        <p class="caption">Image 10 caption</p>
+      </div>
+    </div>
+    <div class="gallery hidden" id="album3">
+      <div class="controls">
+        <button class="arrow left" aria-label="Previous slide">&#9664;</button>
+        <button class="arrow right" aria-label="Next slide">&#9654;</button>
+      </div>
+
+      <div class="slide active" data-index="1">
+        <img src="images/album3/img1.jpeg" alt="Description of image 1">
+        <p class="caption">Image 1 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/album3/img2.jpeg" alt="Description of image 2">
+        <p class="caption">Image 2 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/album3/img3.jpeg" alt="Description of image 3">
+        <p class="caption">Image 3 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/album3/img4.jpeg" alt="Description of image 4">
+        <p class="caption">Image 4 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/album3/img5.jpeg" alt="Description of image 5">
+        <p class="caption">Image 5 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/album3/img6.jpeg" alt="Description of image 6">
+        <p class="caption">Image 6 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/album3/img7.jpeg" alt="Description of image 7">
+        <p class="caption">Image 7 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/album3/img8.jpeg" alt="Description of image 8">
+        <p class="caption">Image 8 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/album3/img9.jpeg" alt="Description of image 9">
+        <p class="caption">Image 9 caption</p>
+      </div>
+      <div class="slide" data-index="1">
+        <img src="images/album3/img10.jpeg" alt="Description of image 10">
+        <p class="caption">Image 10 caption</p>
+      </div>
+    </div>
+
+
+  </main>
+  <footer>
+    <p>&copy; 2024 Fictional Gallery. Designed by <a href="#">Bektur Atashev</a>.</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
