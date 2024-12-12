@@ -3,22 +3,27 @@
 import { useState } from 'react';
 import styles from './SearchBar.module.css';
 
+// SearchBar component that accepts onSearch callback and optional placeholder text
 const SearchBar = ({ onSearch, placeholder = 'Search movie' }) => {
+  // State to manage the search input value
   const [searchTerm, setSearchTerm] = useState('');
 
+  // Handle form submission and trigger the search
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent page reload on form submission
     if (onSearch) {
-      onSearch(searchTerm);
+      onSearch(searchTerm); // Call the parent component's search handler
     }
   };
 
   return (
+    // Form wrapper with submit handler
     <form 
       onSubmit={handleSubmit}
       className={styles.searchForm}
     >
       <div className={styles.searchContainer}>
+        {/* Search input field */}
         <input
           type="text"
           value={searchTerm}
@@ -26,6 +31,7 @@ const SearchBar = ({ onSearch, placeholder = 'Search movie' }) => {
           placeholder={placeholder}
           className={styles.searchInput}
         />
+        {/* Search icon SVG */}
         <div className={styles.searchIcon}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -39,6 +45,7 @@ const SearchBar = ({ onSearch, placeholder = 'Search movie' }) => {
             />
           </svg>
         </div>
+        {/* Submit button */}
         <button
           type="submit"
           className={styles.searchButton}
