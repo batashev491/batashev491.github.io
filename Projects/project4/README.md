@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Project Name: Movie Mate
 
-## Getting Started
+Purpose:
 
-First, run the development server:
+To help users discover movies and save their favorite ones for future reference. The app will fetch data from movie-related APIs and allow users to personalize their experience by saving preferences locally.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Target Audience:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Movie enthusiasts who want a simple tool to search for movies, view details, and keep track of favorites.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+APIs:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+	The Movie Database (TMDb): Provides detailed movie information.
+	•	Endpoint 1: Search movies by keyword (e.g., /search/movie).
+	•	Endpoint 2: Get movie details by ID (e.g., /movie/{movie_id}).
 
-## Learn More
+Features:
 
-To learn more about Next.js, take a look at the following resources:
+	1.	Search Movies:
+	•	Input a movie name and fetch results from the TMDb API.
+	2.	View Movie Details:
+	•	Click on a movie to fetch detailed information from both TMDb and OMDb APIs.
+	3.	Save Favorites:
+	•	Allow users to save movies to a “Favorites” list stored in LocalStorage.
+	4.	Personalized Experience:
+	•	Display the user’s saved favorites on the homepage.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Deployment:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+	•	Deploy the app on Vercel for easy access.
 
-## Deploy on Vercel
+Example Workflow:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+	User Flow:
+	•	User searches for “Inception”.
+	•	Results are fetched from TMDb and displayed.
+	•	User clicks on “Inception” to view details, combining data from TMDb.
+	•	User clicks “Add to Favorites” to save the movie locally.
