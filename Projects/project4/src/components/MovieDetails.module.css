@@ -1,0 +1,193 @@
+.container {
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #0f0f0f;
+  color: #fff;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+.backdropImage {
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.poster {
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+  flex: 1;
+}
+
+.info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.metadata {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.overview {
+  margin-bottom: 2rem;
+}
+
+.overview h2 {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.overview p {
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.cast {
+  margin-bottom: 2rem;
+}
+
+.cast h2 {
+  margin-bottom: 1rem;
+}
+
+.castGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.castMember {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.castMember:hover {
+  transform: translateY(-4px);
+}
+
+.actorImage {
+  width: 100%;
+  aspect-ratio: 2/3;
+  overflow: hidden;
+}
+
+.actorImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.actorInfo {
+  padding: 0.75rem;
+}
+
+.actorName {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.characterName {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.details {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.genre {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.favoriteButton {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1.5rem;
+}
+
+.favoriteButton:hover {
+  transform: scale(1.1);
+  background: rgba(0, 0, 0, 0.8);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.favoriteButton.isFavorite {
+  border-color: rgba(255, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  
+  .poster {
+    align-self: center;
+    max-width: 300px;
+  }
+  
+  .info h1 {
+    font-size: 2rem;
+  }
+  
+  .metadata {
+    flex-wrap: wrap;
+  }
+  
+  .favoriteButton {
+    top: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
