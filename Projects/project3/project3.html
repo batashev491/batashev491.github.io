@@ -1,32 +1,47 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Media</title>
-  <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Video Player</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Interactive Media</h1>
-    
-    <video id="video-player" controls>
-      <source src="example.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <div id="background" class="container">
+        <div class="video-container">
+            <video id="video-player">
+                <source src="example.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div class="custom-controls">
+                <button class="play-pause">Play</button>
+                <button class="mute">Mute</button>
+                <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1">
+                <span class="time-display">0:00 / 0:00</span>
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+        </div>
 
-    <div id="info-box" class="hidden">
-      Welcome to the interactive video experience!
+        <div id="description-box" class="description-box"></div>
+        
+        <div id="info-box" class="info-box">
+            <h3>Information</h3>
+            <p>Video information will appear here</p>
+        </div>
+
+        <div id="info-image" class="info-image">
+            <img src="example.jpg" alt="Information Image">
+            <p>Author: Eve</p>
+        </div>
+
+        <div class="iframe-container">
+            <iframe id="contentIframe" title="Content Frame"></iframe>
+        </div>
     </div>
-
-    <img id="info-image" class="hidden" src="example-image.jpg" alt="Interactive Graphic">
-    
-    <div id="background"></div>
-
-    <section id="description-box">
-      <iframe id="contentIframe" src=""></iframe>
-    </section>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

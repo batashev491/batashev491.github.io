@@ -26,8 +26,8 @@ export default function FavoriteMovies({ favorites, onRemoveFromFavorites }) {
                     <MovieCard
                         key={movie.id}
                         movie={movie}
-                        onAddToFavorites={onRemoveFromFavorites} // Reusing add function for remove
-                        isFavorite={true} // Flag to show remove button instead of add
+                        onAddToFavorites={onRemoveFromFavorites} 
+                        isFavorite={true}
                     />
                 ))}
             </div>
