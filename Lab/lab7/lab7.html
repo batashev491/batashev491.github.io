@@ -1,0 +1,47 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Quote Explorer</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Anime Quote Explorer</h1>
+            <div class="controls">
+                <button id="randomQuote">Get Random Quote</button>
+                <div class="search-container">
+                    <input type="text" id="animeSearch" placeholder="Search by anime title">
+                    <button id="searchQuote">Search</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="quote-container">
+                <div class="quote-card">
+                    <div class="anime-info">
+                        <img id="animeCover" src="" alt="Anime Cover" class="hidden">
+                        <div class="anime-details">
+                            <h2 id="animeTitle"></h2>
+                            <p id="episodeCount"></p>
+                            <p id="score"></p>
+                        </div>
+                    </div>
+                    <blockquote id="quote"></blockquote>
+                    <p id="character"></p>
+                    <div class="description">
+                        <p id="animeDescription"></p>
+                    </div>
+                </div>
+            </section>
+            <div id="loading" class="hidden">Loading...</div>
+            <div id="error" class="hidden"></div>
+        </main>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
